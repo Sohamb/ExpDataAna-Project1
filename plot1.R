@@ -2,7 +2,7 @@
 
 #Loading the data set
 data <- read.table("household_power_consumption.txt",header = TRUE,sep=";",
-                   colClasses=c('character','character','numeric','numeric','numeric','numeric','numeric','numeric','numeric'),na.strings="?")
+colClasses=c('character','character','numeric','numeric','numeric','numeric','numeric','numeric','numeric'),na.strings="?")
 
 #Subsetting the data
 data <- subset(data, data[,1]=="1/2/2007" | data[,1]=="2/2/2007")
